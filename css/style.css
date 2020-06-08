@@ -49,6 +49,16 @@ h1,h2,h3,h4{
     background-color: #ede8e8;
 }
 
+.icon-play{
+    height: 5em;
+    display: none;
+}
+
+.icon-play img{
+    max-width: 10%;
+    max-height: 100%;
+}
+
 .top-content-title{
     color: #612674;
     font-size: 1.375em;
@@ -128,7 +138,7 @@ h1,h2,h3,h4{
 }
 .footer-menushare li{
     display: inline-block;
-    margin: 0 1em;
+    margin:  1em;
 }
 
 .footer-menushare a {
@@ -149,15 +159,16 @@ h1,h2,h3,h4{
     display: block;
 }
 
-
-@media screen and (min-width: 48.75em){
+@media (min-width: 48.75em){
+    
     .header-logo{
         float: left;
     }
+    
     .top-nav{
         background-color: transparent;
         float: right;
-        margin-top: 20px;
+        margin-top: 24px;
     }
     
     .top-nav ul{
@@ -170,7 +181,7 @@ h1,h2,h3,h4{
     }
     
     .top-nav a{
-        color: #713a8d;
+        color: #713a84;
     }
     
     .top-nav a:hover{
@@ -180,23 +191,58 @@ h1,h2,h3,h4{
     .top-content{
         background-color: #521a66;
         color: white;
-    } 
+    }
+    
+    .icon-play{
+        display: block;
+    }
+    
     .top-content-title, .top-content-subtitle{
         color: white;
     }
     
-    /*  CSS GRID */
     .col-1-4{
         width: 44%;
         margin: 3%;
-        float: left ;
+        float: left;
     }
     
-    .content-article, .top-button{
+    .main-content a{
         float: right;
     }
 }
 
-@nedia (min-width: 62.5em){
+@media (min-width: 62.5em){
+    .top-content{
+        background: #521a66 url(../images/bg_topo_1198x670.jpg) no-repeat;
+        height: 20em;
+        padding-top: 17em;
+    }
+}
+
+@media (min-width: 74em){
+    .top-content{
+        background: url(../images/bg_topo_1600x1374.jpg);
+        padding: 19em 15em 14.9em;
+        background-position: center top;
+    }
     
+    .icon-play{
+        height: 9em;
+    }
+    
+    .col-1-4{
+        width: 23%;
+        margin: 1%;
+    }
+    
+    .col-1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+    
+    .main-content-title, .main-content-subtitle{
+        float: none;
+    }
 }
